@@ -7,28 +7,35 @@
 //
 
 #include <iostream>
+#include <map>
 
 using namespace std;
 
 class Solution {
 public:
     bool judgeCircle(string moves) {
-        int countLR = 0, countUD = 0;
+        map<string,int> hMap;
+        //Interesting, can't do insert with char, only with string
+        hMap.insert(make_pair("UD", 0));
+        hMap.insert(make_pair("LR", 0));
+        map<string,int>::iterator itUD = hMap.find("UD");
+        map<string,int>::iterator itLR = hMap.find("LR");
         for(int i=0; i<moves.size(); i++){
+            map<string,int>::iterator it;
             if(moves[i] == 'U'){
-                countUD++;
+                itUD->second++;
             }
             else if(moves[i] == 'D'){
-                countUD--;
+                itUD->second--;
             }
             else if(moves[i] == 'L'){
-                countLR++;
+                itLR->second++;
             }
             else{
-                countLR--;
+                itLR->second--;
             }
         }
-        if(countLR == 0 && countUD == 0){
+        if(itUD->second == 0 && itLR->second == 0){
             return true;
         }
         else{
