@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		21B4BD242262449C00D0D987 /* Robot Return to Origin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Robot Return to Origin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21B4BD272262449C00D0D987 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		21B4BD2F2262479D00D0D987 /* Prompt.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Prompt.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				21B4BD272262449C00D0D987 /* main.cpp */,
+				21B4BD2F2262479D00D0D987 /* Prompt.rtf */,
 			);
 			path = "Robot Return to Origin";
 			sourceTree = "<group>";
